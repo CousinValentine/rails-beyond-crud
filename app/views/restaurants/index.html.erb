@@ -1,0 +1,7 @@
+<h1> Vous êtes dans l'index </h1>
+
+<ul>
+  <%= @restaurant.each do |restaurant|  %>
+    <li> <%= link_to restaurant.name, restaurant_path (restaurant) %> </li>
+  <% end %>
+</ul>
